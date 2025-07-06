@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Download SteamTools</title>
+</head>
+<body style="text-align: center; margin-top: 100px;">
+  <h1>Baixar SteamTools</h1>
+
+  <a href="https://drive.google.com/uc?export=download&id=1RueMDaqX-kpFMAY4hOaF9N-0beqBpjei" download id="downloadLink">
+    <button style="padding: 15px 30px; font-size: 18px; cursor: pointer;">Clique aqui para baixar</button>
+  </a>
+
+  <p id="msg" style="margin-top: 20px; font-weight: bold; color: green;"></p>
+
+  <script>
+    const link = document.getElementById('downloadLink');
+    const msg = document.getElementById('msg');
+
+    link.addEventListener('click', () => {
+      msg.textContent = 'Download iniciado! Aguarde...';
+    });
+  </script>
+</body>
+</html>
+
